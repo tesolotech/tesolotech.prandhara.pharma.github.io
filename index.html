@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prandhara Pharmacy</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    .hero {
+      background-color: #e6f2f2;
+      padding: 80px 0;
+      text-align: center;
+    }
+    .section {
+      padding: 60px 20px;
+    }
+    .team-img {
+      max-width: 100%;
+      height: 300px;
+      object-fit: cover;
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+    }
+    .team-img:hover {
+      transform: scale(1.05);
+    }
+    .logo {
+      height: 60px;
+    }
+    footer {
+      background-color: #e6f2f2;
+      padding: 20px;
+      text-align: center;
+    }
+    .navbar-contact {
+      font-size: 14px;
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+    .navbar-contact span {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+    .navbar-contact img {
+      height: 20px;
+    }
+    .contact-box {
+      background: #fff;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .contact-box h4 {
+      color: #0074b7;
+      margin-bottom: 20px;
+    }
+    .contact-box p {
+      margin: 0;
+    }
+    .social-icons a {
+      display: inline-block;
+      width: 40px;
+      height: 40px;
+      line-height: 40px;
+      margin: 0 10px;
+      border-radius: 50%;
+      background-color: #0074b7;
+      color: white;
+      font-size: 20px;
+      text-align: center;
+      text-decoration: none;
+    }
+    .map-responsive {
+      overflow: hidden;
+      padding-bottom: 56.25%;
+      position: relative;
+      height: 0;
+    }
+    .map-responsive iframe {
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 100%;
+      position: absolute;
+    }
+    
+  </style>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top animate__animated animate__fadeInDown">
+    <div class="container d-flex flex-wrap justify-content-between align-items-center">
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <img src="logo.png" alt="Prandhara Pharmacy Logo" class="logo me-2"> Prandhara
+      </a>
+      <div class="d-none d-lg-flex navbar-contact">
+        <span><img src="https://img.icons8.com/ios-filled/20/phone.png" alt="Phone"> +91 78578 71364, +91 7294052688</span>
+        <span><img src="https://img.icons8.com/ios-filled/20/new-post.png" alt="Email"> prandharapharmacy@gmail.com</span>
+        <span><img src="https://img.icons8.com/ios-filled/20/marker.png" alt="Address"> Hajipur, Bihar</span>
+      </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero" data-aos="fade-up">
+    <div class="container">
+      <h1 data-aos="zoom-in">Welcome to Prandhara Pharmacy</h1>
+      <p class="lead" data-aos="fade-up" data-aos-delay="100">प्राणधारा—जीवन को दे संजीवनी सहारा।</p>
+      <p data-aos="fade-up" data-aos-delay="200">Your trusted neighborhood medical shop.</p>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section" data-aos="fade-left">
+    <div class="container">
+      <h2>About Us</h2>
+      <p>Prandhara Pharmacy is your reliable partner for all pharmaceutical needs. We believe in serving with care and dedication to your health.</p>
+      <p class="lead">प्राणधारा फार्मेसी केवल एक मेडिकल स्टोर नहीं, बल्कि एक सामाजिक संकल्प है। हमारा मिशन है — <strong>"कोई भी व्यक्ति दवा के अभाव में न मरे।"</strong></p>
+      <p>भारत में आज भी हर साल हज़ारों लोग केवल इसलिए जान गंवा देते हैं क्योंकि उन्हें समय पर जरूरी दवाइयाँ नहीं मिल पातीं। यह हमारे समाज की एक गंभीर समस्या है। इसी दर्द को समझते हुए <strong>प्राणधारा फार्मेसी</strong> की नींव रखी गई — ताकि हर ज़रूरतमंद को सही दवा, सही समय पर और सही दाम में मिल सके।</p>
+
+      <ul>
+        <li><strong>हर गाँव और शहर तक दवा की पहुँच सुनिश्चित करना।</strong></li>
+        <li><strong>जरूरतमंदों को उचित मूल्य पर गुणवत्तापूर्ण दवा उपलब्ध कराना।</strong></li>
+        <li><strong>स्वास्थ्य के प्रति जागरूकता फैलाना — 'इलाज से पहले जानकारी'</strong></li>
+        <li><strong>आपातकालीन स्थिति में त्वरित सेवा उपलब्ध कराना।</strong></li>
+      </ul>
+
+      <blockquote class="blockquote">
+        <p class="mb-0">“हमने अपनी आँखों से ऐसे मरीजों को देखा है जो इलाज के अभाव में दम तोड़ देते हैं। उस पीड़ा को खत्म करना ही हमारा धर्म है।”</p>
+      </blockquote>
+
+      <p class="mt-4">📊 <em>WHO</em> के अनुसार, भारत में हर साल लगभग <strong>30% मरीज</strong> इलाज के दौरान सही समय पर दवा न मिलने की वजह से अपनी जान गंवाते हैं।<br>
+        📌 ग्रामीण भारत में <strong>हर तीसरे व्यक्ति को</strong> नज़दीकी फार्मेसी तक पहुँचने में एक घंटे से ज्यादा का समय लगता है।</p>
+
+      <p class="mt-4"><strong>हम केवल दवाएं नहीं बेचते — हम उम्मीद देते हैं, जीवन बचाते हैं।<br>
+      “दवा सब तक पहुँचे, जीवन सबका बचे।”</strong></p>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="section bg-light" data-aos="fade-right">
+    <div class="container">
+      <h2>Our Services</h2>
+      <div class="row">
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+          <h5>दवाओं की पूरी रेंज</h5>
+          <p>From prescription to OTC medicines – सब कुछ मिलेगा एक ही जगह।</p>
+        </div>
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+          <h5>Fast & Friendly Service</h5>
+          <p>We value your time – get your medicines quickly and correctly.</p>
+        </div>
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+          <h5>Free Health Tips</h5>
+          <p>हफ्ते में एक बार हेल्थ चेकअप और सलाह – बिल्कुल मुफ़्त।</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team Section -->
+  <section class="section" id="team" data-aos="fade-up">
+    <div class="container">
+      <h2>Our Team</h2>
+      <div class="row">
+        <div class="col-md-6 text-center" data-aos="zoom-in" data-aos-delay="100">
+          <img src="Amarjeet Kumar.jpeg" alt="Amarjeet Kumar" class="team-img">
+          <h5>Amarjeet Kumar</h5>
+          <p>Founder & Operations Head</p>
+        </div>
+        <div class="col-md-6 text-center" data-aos="zoom-in" data-aos-delay="200">
+          <img src="Shubham Kumar.png" alt="Shubham Kumar" class="team-img">
+          <h5>Shubham Kumar</h5>
+          <p>Founder & Pharmacist</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section bg-light" data-aos="fade-up">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-md-4 contact-box">
+          <h4>CONTACT US</h4>
+          <p>Choti Marai Road, Hajipur, Bihar - 844101</p>
+          <p>Hajipur, Bihar - 844101</p>
+          <p class="mt-3">+91 7294052688, +91 78578 71364</p>
+          <p>prandharapharmacy@gmail.com</p>
+        </div>
+        <div class="col-md-4 contact-box">
+          <h4>HOURS</h4>
+          <p>Monday – Sunday</p>
+          <p>8:00 AM – 10:00 PM</p>
+        </div>
+        <div class="col-md-4 contact-box">
+          <h4>GET SOCIAL</h4>
+          <div class="social-icons">
+            <a href="#" title="Facebook">F</a>
+            <a href="#" title="Instagram">I</a>
+            <a href="#" title="Google">G</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- Google Map Section -->
+  <section class="section" data-aos="fade-up">
+    <div class="container">
+      <h2 class="text-center mb-4">Find Us Here</h2>
+      <div class="map-responsive">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3595.3929300145023!2d85.21320477539808!3d25.691411277396167!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjXCsDQxJzI5LjEiTiA4NcKwMTInNTYuOCJF!5e0!3m2!1sen!2sin!4v1747879177926!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="animate__animated animate__fadeInUp">
+    <p>&copy; 2025 प्राणधारा फार्मेसी | सभी अधिकार सुरक्षित</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true,
+    });
+  </script>
+</body>
+
+</html>
